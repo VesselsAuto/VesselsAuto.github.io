@@ -52,6 +52,24 @@ blockquote, q {
 		content: '';
 		content: none;
 	}
+.hero-buttons a {
+  display: inline-block;
+  padding: 12px 26px;
+  margin: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: #111;
+  color: white;
+}
+
+.btn-secondary {
+  background: #e5e5e5;
+  color: #111;
+}
 
 table {
 	border-collapse: collapse;
