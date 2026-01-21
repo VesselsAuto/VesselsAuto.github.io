@@ -5034,3 +5034,61 @@ input, select, textarea {
   .services-section .services-title{ font-size: 40px; }
   .services-section .services-grid{ grid-template-columns: 1fr; }
 }
+.why-section{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 18px;
+  text-align: center;
+}
+
+.why-title{
+  font-size: 56px;
+  letter-spacing: 0.18em;
+  font-weight: 900;
+  margin: 0 0 28px 0;
+  text-transform: uppercase;
+}
+
+.why-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.why-card{
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  text-align: left;
+  padding: 18px 18px;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+}
+
+.why-icon{
+  font-size: 22px;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.why-text h3{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.why-text p{
+  margin: 6px 0 0 0;
+  font-size: 14px;
+  opacity: 0.85;
+  line-height: 1.5;
+}
+
+@media (max-width: 800px){
+  .why-title{ font-size: 40px; }
+  .why-grid{ grid-template-columns: 1fr; }
+}
