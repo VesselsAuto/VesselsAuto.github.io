@@ -5182,3 +5182,13 @@ input, select, textarea {
     white-space: normal !important;
   }
 }
+
+/* Fix weird word spacing in "What to Expect" text */
+#expect p,
+#expect li p,
+.what-to-expect p,
+.features p {
+  text-align: left !important;
+  text-justify: auto !important;
+  word-spacing: normal !important;
+}
