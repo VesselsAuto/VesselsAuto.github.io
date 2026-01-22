@@ -3493,6 +3493,9 @@ input, select, textarea {
 			}
 
 		}
+#wrapper.fade-in:before {
+    display: none !important;
+}
 
 /* Intro */
 
