@@ -5167,3 +5167,18 @@ input, select, textarea {
     letter-spacing: normal;
   }
 }
+@media screen and (max-width: 736px) {
+  .bubbles,
+  .bubbles li,
+  .bubble,
+  .bubble p,
+  .bubble span,
+  #expect p,
+  #expect li {
+    text-align: left !important;
+    text-justify: auto !important;
+    word-spacing: normal !important;
+    letter-spacing: normal !important;
+    white-space: normal !important;
+  }
+}
