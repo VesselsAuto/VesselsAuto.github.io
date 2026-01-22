@@ -5157,3 +5157,13 @@ input, select, textarea {
   color: #e6e6e6;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
 }
+@media screen and (max-width: 736px) {
+  .why-section p,
+  .why-card p {
+    text-align: left;       /* prevents justification spacing */
+    text-justify: auto;
+    hyphens: auto;          /* optional: smoother line breaks */
+    word-spacing: normal;
+    letter-spacing: normal;
+  }
+}
