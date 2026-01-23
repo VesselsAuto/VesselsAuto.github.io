@@ -95,7 +95,7 @@ footer, header, hgroup, menu, nav, section {
 
 @media (max-width: 700px){
   .services-title{ font-size: 40px; }
-  .services-grid{ grid-template-columns: 1fr; }
+ .services-grid{ grid-template-columns: repeat(2, 1fr); }
 }
 
 body {
@@ -225,7 +225,7 @@ blockquote, q {
 /* Mobile stacking */
 @media (max-width: 900px){
   .repairs-wrap{
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .trust-card{
     position: relative;
