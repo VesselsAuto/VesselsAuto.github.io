@@ -5146,7 +5146,7 @@ input, select, textarea {
 
 @media (max-width: 800px){
   .why-title{ font-size: 40px; }
-  .why-grid{ grid-template-columns: 1fr !important; }
+  .why-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
 }
 #intro h1 {
   color: #f2f2f2;
