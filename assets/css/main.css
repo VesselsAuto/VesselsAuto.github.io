@@ -5240,3 +5240,27 @@ input, select, textarea {
   text-justify: auto !important;
   word-spacing: normal !important;
 }
+
+/* Fix overflow in small 2-column cards */
+.why-card,
+.services-card,
+.repair-card,
+.bubble {
+  min-width: 0;              /* IMPORTANT: allows flex/grid children to shrink */
+}
+
+.why-icon {
+  flex: 0 0 auto;            /* icon keeps its size */
+}
+
+.why-text {
+  flex: 1 1 auto;            /* text is allowed to shrink */
+  min-width: 0;              /* IMPORTANT: prevents overflow */
+}
+
+/* Force long text to wrap inside the card */
+.why-text h3,
+.why-text p {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
