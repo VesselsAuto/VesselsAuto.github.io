@@ -93,6 +93,10 @@ footer, header, hgroup, menu, nav, section {
   background: rgba(0,0,0,0.06);
 }
 @media (max-width: 800px) {
+  .why-text h3 { font-size: 16px; }
+  .why-text p  { font-size: 13px; }
+}
+@media (max-width: 800px) {
 
   /* Center the grids themselves */
   .why-grid,
