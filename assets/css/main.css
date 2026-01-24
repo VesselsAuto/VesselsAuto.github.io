@@ -92,6 +92,50 @@ footer, header, hgroup, menu, nav, section {
 .services-btn:hover{
   background: rgba(0,0,0,0.06);
 }
+@media (max-width: 800px) {
+
+  /* Center the grids themselves */
+  .why-grid,
+  .services-grid,
+  .repairs-wrap {
+    justify-items: center;
+  }
+
+  /* Fix cards layout */
+  .why-card,
+  .service-card,
+  .repair-card,
+  .bubble {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Center text blocks */
+  .why-text,
+  .service-text,
+  .repair-text {
+    text-align: center;
+  }
+
+  /* Icons spacing */
+  .why-icon,
+  .service-icon,
+  .repair-icon {
+    margin: 0 0 8px 0;
+  }
+
+  /* Prevent text overflow issues */
+  .why-card *,
+  .service-card *,
+  .repair-card *,
+  .bubble * {
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+}
 
 @media (max-width: 700px){
   .services-title{ font-size: 40px; }
