@@ -5264,3 +5264,42 @@ input, select, textarea {
   overflow-wrap: anywhere;
   word-break: break-word;
 }
+/* ===== Mobile layout rules ===== */
+@media (max-width: 800px) {
+
+  /* -----------------------------
+     WHY section: 1 column, wider
+  -------------------------------- */
+  .why-grid{
+    grid-template-columns: 1fr !important; /* 1 per row */
+    justify-items: center;                /* center each card */
+    width: 100%;
+    max-width: 560px;                     /* "wider" cards without looking huge */
+    margin: 0 auto !important;
+  }
+
+  .why-card{
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+
+  /* ------------------------------------
+     SERVICES section: 2 columns centered
+  ------------------------------------- */
+  .services-grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important; /* keep 2 */
+    justify-items: center;                                       /* center items */
+    width: 100%;
+    max-width: 560px;                                            /* centers the whole grid */
+    margin: 0 auto !important;
+  }
+
+  /* make sure each services card fits inside its grid cell */
+  .services-card,
+  .service-card{
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+  }
+}
