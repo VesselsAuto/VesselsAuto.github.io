@@ -5303,3 +5303,28 @@ input, select, textarea {
     min-width: 0;
   }
 }
+@media (max-width: 700px){
+
+  /* Center icon inside service bubble */
+  .services-section .service-chip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* horizontal center */
+    justify-content: center; /* vertical center (optional) */
+    text-align: center;
+  }
+
+  /* If you use <i> icons (Font Awesome etc.) */
+  .services-section .service-chip i{
+    display: block;
+    margin: 0 0 6px 0;       /* space between icon and text */
+    text-align: center;
+  }
+
+  /* If you use span icons */
+  .services-section .service-chip .service-icon{
+    display: block;
+    margin: 0 0 6px 0;
+    text-align: center;
+  }
+}
