@@ -5413,3 +5413,12 @@ input, select, textarea {
   }
 }
 }
+/* HARD override: lock the right column to fill the grid cell */
+.repairs-wrap > .trust-card{
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  justify-self: stretch !important;
+  align-self: start !important;
+}
