@@ -5672,3 +5672,54 @@ p:empty{ display:none; }
   margin-top: 0 !important;
   padding-top: 2.5rem !important; /* adjust smaller/larger if you want */
 }
+/* ===== MOBILE FOOTER FIX (Massively) ===== */
+@media screen and (max-width: 736px) {
+
+  /* Give the footer a little breathing room */
+  #footer {
+    padding: 2.5rem 1.25rem !important;
+  }
+
+  /* Stack contact sections cleanly */
+  #footer .split.contact {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.25rem !important;          /* space between Phone / Email blocks */
+    align-items: stretch !important;
+  }
+
+  /* Each contact block should be full width */
+  #footer .split.contact > section {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-top: 1px solid rgba(0,0,0,0.12) !important;
+    padding-top: 1rem !important;
+  }
+
+  /* Remove the first separator line */
+  #footer .split.contact > section:first-child {
+    border-top: none !important;
+    padding-top: 0 !important;
+  }
+
+  /* Make long email link wrap instead of squeezing */
+  #footer a {
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+  }
+
+  /* Fix “bunched up” email fallback spacing */
+  #footer .email-fallback {
+    margin: 0.6rem 0 0 0 !important;
+    font-size: 0.95em;
+    opacity: 0.85;
+    line-height: 1.4;
+  }
+
+  /* Prevent weird tight line spacing inside <p> */
+  #footer p {
+    margin: 0.4rem 0 0 0 !important;
+    line-height: 1.5 !important;
+  }
+}
