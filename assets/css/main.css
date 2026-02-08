@@ -5515,3 +5515,20 @@ input, select, textarea {
   position: relative;
   z-index: 1;
 }
+.services-section{
+  position: relative;
+}
+
+.services-section::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.82);
+  z-index: 0;
+}
+
+.services-section > *{
+  position: relative;
+  z-index: 1;
+}
+
