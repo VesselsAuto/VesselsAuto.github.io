@@ -175,6 +175,15 @@ blockquote, q {
   gap: 28px;
   align-items: start;
 }
+/* Force both columns to actually fill their grid cells */
+.repairs-left,
+.repairs-right,
+.trust-card{
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  min-width: 0;
+}
 .repairs-left,
 .repairs-right{
   width: 100%;
