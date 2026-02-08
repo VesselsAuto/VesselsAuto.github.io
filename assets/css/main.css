@@ -5651,3 +5651,24 @@ p:empty{ display:none; }
   padding: 0 18px;
   box-sizing: border-box;
 }
+/* ===== REMOVE GAP ABOVE FOOTER ===== */
+
+/* Kill the default bottom spacing Massively adds at the end of main content */
+#main{
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* The last post/article often has a big bottom margin */
+#main > article:last-child,
+#main > section:last-child,
+#main > *:last-child{
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Footer itself: make sure it starts immediately */
+#footer{
+  margin-top: 0 !important;
+  padding-top: 2.5rem !important; /* adjust smaller/larger if you want */
+}
