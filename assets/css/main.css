@@ -5631,3 +5631,23 @@ p:empty{ display:none; }
   .section-white{ padding:56px 0; }
   .section-inner{ padding:0 16px; }
 }
+/* ===== FIX: stop global section padding from messing up the footer ===== */
+
+/* If you added global section padding anywhere, neutralize it in the footer */
+#footer section{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Give the footer itself normal spacing */
+#footer{
+  padding: 4rem 0 !important;
+}
+
+/* Make footer content centered and sized nicely */
+#footer .split.contact{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 18px;
+  box-sizing: border-box;
+}
