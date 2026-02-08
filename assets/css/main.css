@@ -5497,3 +5497,21 @@ input, select, textarea {
     border-radius: 14px;
   }
 }
+/* WHY section: restore readable overlay behind content */
+.why-section{
+  position: relative;
+}
+
+.why-section::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.82); /* adjust 0.75–0.90 to taste */
+  z-index: 0;
+}
+
+/* keep the actual content above the overlay */
+.why-section > *{
+  position: relative;
+  z-index: 1;
+}
