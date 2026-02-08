@@ -5485,3 +5485,15 @@ input, select, textarea {
   .repairs-wrap{ grid-template-columns: 1fr !important; }
   .trust-card{ position: relative !important; top: auto !important; }
 }
+/* ===== FIX: keep white cards on mobile ===== */
+@media (max-width: 900px){
+  .why-card,
+  .service-card,
+  .services-card,
+  .repair-card,
+  .bubble{
+    background: #fff !important;
+    border: 1px solid rgba(0,0,0,0.12) !important;
+    border-radius: 14px;
+  }
+}
