@@ -169,8 +169,9 @@ blockquote, q {
   max-width: 1100px;
   margin: 0 auto;
   padding: 40px 18px;
+
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr; /* left bigger, right fills space */
+  grid-template-columns: 1fr 1fr;   /* EVEN columns */
   gap: 28px;
   align-items: start;
 }
