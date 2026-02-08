@@ -162,7 +162,7 @@ text-align: left;
 }
 .repairs-list {
     text-align: left;
-    display: inline-block;   /* prevents centering from parent */
+   
 }
 
 blockquote, q {
