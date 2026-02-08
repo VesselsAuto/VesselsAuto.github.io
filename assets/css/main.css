@@ -99,11 +99,15 @@ footer, header, hgroup, menu, nav, section {
 @media (max-width: 800px) {
 
   /* Center the grids themselves */
-  .why-grid,
-  .services-grid,
-  .repairs-wrap {
-    justify-items: center;
-  }
+.why-grid,
+.services-grid {
+  justify-items: center;
+}
+
+/* Repairs grid should stretch items */
+.repairs-wrap{
+  justify-items: stretch;
+}
 
   /* Fix cards layout */
   .why-card,
