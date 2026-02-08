@@ -5452,3 +5452,36 @@ input, select, textarea {
   .repairs-wrap{ grid-template-columns: 1fr; }
   .trust-card{ position: relative; top: auto; }
 }
+/* ===== FINAL REPAIRS OVERRIDE (put at very bottom) ===== */
+.repairs-wrap{
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+  gap: 28px !important;
+  align-items: start !important;
+
+  justify-items: stretch !important;   /* key */
+  justify-content: center !important;  /* keeps the 2-col block centered */
+
+  width: 100% !important;
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  padding: 40px 18px !important;
+  box-sizing: border-box !important;
+}
+
+/* Force BOTH columns to fill their grid cell exactly */
+.repairs-wrap > .repairs-left,
+.repairs-wrap > .trust-card{
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  justify-self: stretch !important;
+  box-sizing: border-box !important;
+}
+
+/* Mobile stack */
+@media (max-width: 900px){
+  .repairs-wrap{ grid-template-columns: 1fr !important; }
+  .trust-card{ position: relative !important; top: auto !important; }
+}
