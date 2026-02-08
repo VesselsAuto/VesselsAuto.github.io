@@ -5531,4 +5531,22 @@ input, select, textarea {
   position: relative;
   z-index: 1;
 }
-
+/* Make these sections fully white like the hero */
+.why-section,
+.services-section{
+  background: #fff !important;
+}
+/* Kill any translucent overlays */
+.why-section::before,
+.services-section::before{
+  content: none !important;
+}
+/* No “gaps” between white sections */
+.why-section,
+.services-section{
+  margin: 0 !important;
+  padding: 70px 18px !important; /* adjust to taste */
+}
+section{
+  margin-bottom: 0;
+}
